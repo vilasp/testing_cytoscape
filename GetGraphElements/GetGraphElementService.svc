@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="GetGraphElements.GetGraphElementSerive" CodeBehind="GetGraphElementService.svc.cs" %>

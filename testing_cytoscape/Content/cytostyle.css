@@ -1,0 +1,28 @@
+﻿#cy {
+       
+  height:800px;
+  width: 850px;
+  position: relative;
+  float:left;
+  border-right: solid 1px #808080;
+}
+
+#option-field {
+    position:relative;
+    float:left;
+    height: 800px;
+    width: 200px;
+    padding: 20px 20px;
+}
+
+.option-container{
+    position:relative;
+    margin:auto;
+    text-align:center;
+}
+
+#main-cy-container{
+    height: 800px;
+    width: 1150px;
+    position: relative;
+}
