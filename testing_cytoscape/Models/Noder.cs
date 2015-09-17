@@ -11,14 +11,14 @@ namespace testing_cytoscape.Models
         public long Id { get; set; }
         public string NodeName { get; set; }
         public string AktTypName { get; set; }
+        public short AktTyp { get; set; }
 
-        public short bla { get; set; }
         public Noder(long id,string nodeName,string aktTypName,short bla)
         {
             this.Id = id;
             this.NodeName = nodeName;
             this.AktTypName = aktTypName;
-            this.bla = bla;
+            this.AktTyp = bla;
         }
     }
 }

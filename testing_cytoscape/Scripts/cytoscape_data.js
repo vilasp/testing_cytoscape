@@ -101,6 +101,10 @@ function initGraph(nodes, edges, test) {
             .css({
                 'opacity': 0.10,
                 'text-opacity': 0
+            })
+         .selector('.startend')
+            .css({
+                'background-color' : 'red'
             }),
 
         elements: {
@@ -136,6 +140,10 @@ function initGraph(nodes, edges, test) {
                 }
 
             });
+
+            //Update all the colors on start and end nodes
+            var a = cy.elements('node[AktTyp = 1]').addClass('startend');
+            var b = cy.elements('node[AktTyp = 0]').addClass('startend');
 
             /**
             * Set the layout of the graph to "Dagre", options/attributes specified
@@ -223,6 +231,12 @@ function getDagreOptions() {
     return options;
 }
 
+function genericChange(attributeToChange, changeToValue, evaluationAttribute, evaluationValue) {
+    if (evaluationAttribute === evaluationValue)
+    {
+        cy.eles
+    }
+}
 
 /**
 * Creates a gridded background pattern
